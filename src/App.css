@@ -45,6 +45,8 @@ button:hover {
   width: 320px;
   height: 80px;
   padding: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
   overflow: hidden;
   background-color: rgba(19, 19, 19, 0.336);
   font-size: 32px;
