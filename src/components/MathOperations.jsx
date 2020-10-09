@@ -1,15 +1,21 @@
 import React from "react";
+import Button from "./Button";
+import PropTypes from "prop-types";
 
-const MathOperations = () => {
+const MathOperations = ({clickHandlerFunction}) => {
   return (
     <div className="math-operations">
-      <button>+</button>
-      <button>-</button>
-      <button>*</button>
-      <button>/</button>
-      <button>=</button>
+      <Button text="+" clickHandler={clickHandlerFunction} />
+      <Button text="-" clickHandler={clickHandlerFunction} />
+      <Button text="*" clickHandler={clickHandlerFunction} />
+      <Button text="/" clickHandler={clickHandlerFunction} />
+      <Button text="=" clickHandler={clickHandlerFunction} />
     </div>
   );
+};
+
+MathOperations.propTypes = {
+  clickHandlerFunction: PropTypes.func.isRequired,
 };
 
 export default MathOperations;

@@ -12,9 +12,9 @@ const App = () => {
   return (
     <main className="react-calculadora">
       <Result value={"0"} />
-      <Numbers clickHandlerFunction={clickHandlerFunction}/>
-      <Functions />
-      <MathOperations />
+      <Numbers clickHandlerFunction={clickHandlerFunction} />
+      <Functions clickHandlerFunction={clickHandlerFunction} />
+      <MathOperations clickHandlerFunction={clickHandlerFunction} />
     </main>
   );
 };
